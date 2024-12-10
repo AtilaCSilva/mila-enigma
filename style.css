@@ -1,0 +1,228 @@
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background-image: url(./images/bg.jpg);
+  background-position: center;
+  background-size: cover;
+  font-family: "Itim", "Roboto", sans-serif;
+
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 0px;
+}
+
+header img.logo {
+  max-width: 500px;
+  height: auto;
+}
+
+main {
+  margin: 0 auto;
+  margin-bottom: 60px;
+  background: rgba(0, 0, 0, 0.75);
+  max-width: 1160px;
+  border-radius: 10px;
+  padding: 40px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 120px;
+}
+
+.ye, .no {
+  display: inline-block;
+  width: 115px;
+  height: 105px;
+  border-radius: 50%;
+  border: 1px solid #361818;
+  background: rgba(37, 21, 21, 0.6);
+
+  font-family: "Julee", "Itim", sans-serif;
+  font-size: 32px;
+  color: #990000;
+  transition: all 0.1s linear;
+}
+
+.ye:hover, .no:hover {
+  background-color: rgba(54, 25, 25, 0.6);
+  transform: scale(1.2);
+  transition: all 0.1s linear;
+  cursor: pointer;
+}
+
+
+.welcome p {
+  color: #DFDFDF;
+  font-size: 24px;
+  list-style: 1.4;
+
+}
+
+.subtitle {
+  font-family: "Itim", "Roboto", sans-serif;
+  font-size: 48px;
+  list-style: 1.5;
+  color: #fff;
+  text-align: center;
+}
+
+.kanji {
+  color: rgba(56, 56, 56, 0.315);
+}
+
+.bg-poem {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+
+  background-color: rgba(0, 0, 0, 0.75);
+  border-radius: 10px;
+  padding: 40px 100px;
+}
+
+.bg-poem p:nth-child(1) {
+  color: #DD8686;
+  font-size: 20px;
+}
+
+.bg-poem p:nth-child(2) {
+  color: #FFCCCC;
+  font-size: 18px;
+}
+
+.poem-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 685px;
+  margin: 0 auto;
+  color: #FFDEDE;
+}
+
+.poem-text {
+  max-width: 30ch;
+  font-size: 24px;
+  line-height: 1.5;
+}
+
+.final p {
+  color: #DFDFDF;
+  font-size: 20px;
+}
+
+.morse {
+  color: #DD8686;
+}
+
+/* Media Query para dispositivos móveis (até 768px) */
+@media screen and (max-width: 768px) {
+  body {
+    font-size: 16px;
+  }
+
+  header {
+    padding: 40px 0;
+  }
+
+  header img.logo {
+    width: 150px;
+  }
+
+  main {
+    max-width: 90%;
+    padding: 20px;
+  }
+
+  .buttons {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .ye, .no {
+    width: 80px;
+    height: 80px;
+    font-size: 28px;
+  }
+
+  .welcome p {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .subtitle {
+    font-size: 32px;
+  }
+
+  .bg-poem {
+    padding: 20px;
+    gap: 20px;
+  }
+
+  .poem-text {
+    font-size: 18px;
+    max-width: 100%;
+  }
+
+  .final p {
+    font-size: 18px;
+  }
+}
+
+/* Media Query para dispositivos móveis (até 480px) */
+@media screen and (max-width: 480px) {
+  body {
+    font-size: 14px;
+  }
+
+  header {
+    padding: 30px 0;
+  }
+
+  header img.logo {
+    width: 120px;
+  }
+
+  main {
+    max-width: 100%;
+    padding: 10px;
+  }
+
+  .buttons {
+    gap: 10px;
+  }
+
+  .ye, .no {
+    width: 70px;
+    height: 70px;
+    font-size: 24px;
+  }
+
+  .welcome p {
+    font-size: 16px;
+  }
+
+  .subtitle {
+    font-size: 28px;
+  }
+
+  .bg-poem {
+    padding: 15px;
+    gap: 10px;
+  }
+
+  .poem-text {
+    font-size: 16px;
+    max-width: 100%;
+  }
+
+  .final p {
+    font-size: 16px;
+  }
+}
